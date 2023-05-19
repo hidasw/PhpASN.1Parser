@@ -62,7 +62,6 @@ function asn1_parse($hex) {
 
 //$f = file_get_contents('t.cer');
 $f = $str1;
-$f=bin2hex($f);
 $f = asn1_parse($f);
 echo "==============================print_r1======================================================\n";
 print_r($f);
