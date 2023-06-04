@@ -62,6 +62,9 @@ class asn1 {
 	 * @protected
 	 */
 	protected static function oneParse($hex) {
+		if($hex == '') {
+			return false;
+		}
 		if(!@ctype_xdigit($hex) || @strlen($hex)%2!=0) {
 			echo "input:\"$hex\" not hex string!.\n";
 			return false;
